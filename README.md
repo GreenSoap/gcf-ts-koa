@@ -13,7 +13,7 @@ This command launches a real-time updating typescript compiler inside a docker c
 docker-compose up (windows)
 docker compose up (unix)
 ```
-Alternatively ```cd``` into the rest_api directory and run ```npm start dev```
+Alternatively ```cd``` into the rest_api directory and run ```npm install && npm run dev```
 
 ## Running tests
 
