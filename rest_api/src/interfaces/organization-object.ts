@@ -14,7 +14,7 @@ enum OrganizationObjectError {
 /**
  * Validates an object as OrganizationObject.
  * @param { any } object The object to validate.
- * @return { Array<OrganizationObjectError | null, IOrganizationObject | null> }
+ * @return { Array<OrganizationObjectError> }
  * An array containing errors and the potentially validated object.
  */
 const validateOrganizationObject = (object: any): Array<OrganizationObjectError> => {
