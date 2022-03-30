@@ -23,15 +23,14 @@ npm run test
 ```
 
 ## API Documentation
+
+GET /
+
+POST /object
+
+Example body: 
+
 ```json
-  GET /
-
-  ----------------------
-
-  POST /object
-
-  Accepts a body with these fields:
-
   {
       "organizationId": 12,
       "objectId": 2,
