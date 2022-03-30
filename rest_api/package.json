@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build": "tsc --build",
-    "dev": "tsnd --respawn src/server.ts --transpileOnly",
+    "dev": "tsnd --respawn --transpile-only src/server.ts",
     "test": "jest --watchAll"
   },
   "dependencies": {
