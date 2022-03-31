@@ -3,7 +3,7 @@
     "build": "npx tsc",
     "dev": "tsnd --respawn --transpile-only src/server.ts",
     "test": "jest --watchAll",
-    "deploy": "npm run build && gcloud functions deploy 'rd_test_1' --trigger-http --entry-point=server"
+    "deploy": "gcloud functions deploy 'rd-test' --trigger-http --entry-point=server"
   },
   "dependencies": {
     "@koa/cors": "^3.3.0",
