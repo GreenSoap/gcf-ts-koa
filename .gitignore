@@ -104,8 +104,6 @@ dist
 # TernJS port file
 .tern-port
 
-rest_api/src/*.js
-rest_api/src/interfaces/*.js
-rest_api/src/routers/*.js
+rest_api/build/
 
 *.test.js
