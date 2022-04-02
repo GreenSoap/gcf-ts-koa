@@ -18,12 +18,12 @@ app.use(koaCors({
 app.use(koaBody());
 app.use(router.routes());
 app.use(objectRouter.routes());
-const server = app
+/* const server = app
     .listen(config.port, async () => {
       console.log(`Listening on port ${config.port}`);
     })
     .on('error', (error) => {
       console.error(error);
-    });
+    }); */
 
-export default server;
+export { app };

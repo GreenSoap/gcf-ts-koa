@@ -2,8 +2,9 @@
   "scripts": {
     "build": "npx tsc",
     "dev": "tsnd --respawn --transpile-only src/server.ts",
-    "test": "jest --watchAll",
-    "deploy": "gcloud functions deploy 'rd-test' --trigger-http --entry-point=server"
+    "test": "jest --watchAll ./build/__tests__",
+    "deploy": "gcloud functions deploy rd-test --trigger-http --entry-point app --runtime nodejs16",
+    "deploy:build": "npm run build && npm run deploy"
   },
   "dependencies": {
     "@koa/cors": "^3.3.0",
