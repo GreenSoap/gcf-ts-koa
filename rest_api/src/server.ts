@@ -3,7 +3,6 @@ import koaBody from 'koa-body';
 import koaCors from '@koa/cors';
 import Router from '@koa/router';
 import objectRouter from './routers/object-router';
-import config from './config';
 
 const app = new Koa();
 const router = new Router();
@@ -18,12 +17,5 @@ app.use(koaCors({
 app.use(koaBody());
 app.use(router.routes());
 app.use(objectRouter.routes());
-/* const server = app
-    .listen(config.port, async () => {
-      console.log(`Listening on port ${config.port}`);
-    })
-    .on('error', (error) => {
-      console.error(error);
-    }); */
 
 export { app };

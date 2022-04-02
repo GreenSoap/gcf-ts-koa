@@ -1,11 +1,12 @@
 import request from 'supertest';
 import {app} from '../../src/server';
 import {IOrganizationObject} from '../../src/interfaces';
+import config from '../../src/config';
 
 let server: any;
 
 beforeAll(() => {
-  server = app.listen(8080);
+  server = app.listen(config.port);
 })
 
 

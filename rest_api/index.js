@@ -1,1 +1,1 @@
-exports.app = require('./build/server').app;
+exports.app = require('./build/server').app.callback();
