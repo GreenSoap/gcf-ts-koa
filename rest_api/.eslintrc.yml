@@ -12,3 +12,4 @@ plugins:
 rules:
   eol-last: off
   max-len: off
+  linebreak-style: off

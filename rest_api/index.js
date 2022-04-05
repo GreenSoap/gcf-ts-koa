@@ -1,1 +1,0 @@
-exports.app = require('./build/server').app.callback();

@@ -2,9 +2,13 @@
 A basic REST API boilerplate using Koa + TypeScript as well as Jest for unit testing
 
 ## Table of Contents
+- [Deploying to Google Cloud Functions](#google-cloud-functions)
 - [Building development environment](#building-development-environment)
 - [Running tests](#running-tests)
 - [API Documentation](#api-documentation)
+
+## Deploying to Google Cloud Functions
+```cd``` into the rest_api directory and run ```npm run deploy```
 
 ## Building development environment
 

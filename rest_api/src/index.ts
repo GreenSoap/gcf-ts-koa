@@ -3,8 +3,9 @@ import koaBody from 'koa-body';
 import koaCors from '@koa/cors';
 import Router from '@koa/router';
 import objectRouter from './routers/object-router';
+import {HttpFunction} from '@google-cloud/functions-framework';
 
-const app = new Koa();
+export const app = new Koa();
 const router = new Router();
 
 router.get('/', async (ctx, next) => {
@@ -18,4 +19,4 @@ app.use(koaBody());
 app.use(router.routes());
 app.use(objectRouter.routes());
 
-export { app };
+export const api: HttpFunction = app.callback();

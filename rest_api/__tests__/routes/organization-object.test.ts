@@ -1,14 +1,14 @@
 import request from 'supertest';
-import {app} from '../../src/server';
+import {app} from '../../src/index';
 import {IOrganizationObject} from '../../src/interfaces';
 import config from '../../src/config';
+import {Server} from 'http';
 
-let server: any;
+let server: Server;
 
 beforeAll(() => {
   server = app.listen(config.port);
-})
-
+});
 
 // This closes the server after the tests
 afterEach((done) => {
